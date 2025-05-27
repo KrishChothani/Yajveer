@@ -6,7 +6,8 @@ import ServerlessHttp from "serverless-http";
 const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://yajveer.vercel.app"  
+  "https://yajveer.vercel.app"  ,
+  "https://yajveer-murex.vercel.app"
 ];
 // CORS middleware
 app.use(
