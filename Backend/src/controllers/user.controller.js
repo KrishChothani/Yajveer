@@ -90,9 +90,10 @@ const loginUser = asyncHandler(async (req, res) => {
   );
 
   const options = {
-    httpOnly: true,
-    secire: true,
-  };
+      httpOnly: true,
+      secure: true,
+      sameSite: "Strict", // You might also want to add this for security
+    };
 
   return res
     .status(200)
